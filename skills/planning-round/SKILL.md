@@ -32,9 +32,9 @@ Use for any planning round, project plan, feature design plan, or request to
 
 ## After plan acceptance
 
-- The planner remains the planner. Split accepted work into small, isolated,
-  independently implementable milestones and hand each to a subagent. Try to keep
-  each subagent workload under 200k context length.
+- The planner remains the planner and organizer. Split accepted work into small, isolated,
+  independently implementable milestones and hand each to a subagent with fresh context window, not split from current session.
+  Try to keep each subagent workload under 200k context length.
 - Each milestone must state scope, dependencies, allowed files, validation rules,
   acceptance criteria, and a stop condition.
 - The user sets the reporting cadence: how many milestones or progress points
